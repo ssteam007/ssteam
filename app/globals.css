@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{ color-scheme: dark; }
+
+.ssteam-bg{
+  background:
+    radial-gradient(900px 450px at 20% 10%, rgba(255,0,0,0.22), transparent 60%),
+    radial-gradient(900px 450px at 90% 40%, rgba(255,0,0,0.18), transparent 60%),
+    linear-gradient(180deg, #050000, #0a0000 55%, #040000);
+}
+
+.ssteam-card{
+  background: rgba(0,0,0,0.74);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,0,0,0.35);
+  box-shadow: 0 25px 80px rgba(0,0,0,0.65);
+}
+.ssteam-border{ border: 1px solid rgba(255,0,0,0.55); }
+
+.ssteam-input{
+  width:100%;
+  border-radius:14px;
+  padding:12px 14px;
+  background: rgba(0,0,0,0.65);
+  color: white;
+  border: 1px solid rgba(255,0,0,0.45);
+  outline:none;
+}
+.ssteam-input:focus{
+  box-shadow: 0 0 0 3px rgba(255,0,0,0.22);
+  border-color: rgba(255,0,0,0.9);
+}
+
+.ssteam-btn{
+  width:100%;
+  border-radius:14px;
+  padding:14px 16px;
+  background: rgb(220,0,0);
+  color: black;
+  font-weight: 900;
+  letter-spacing:.04em;
+  text-align:center;
+  display:inline-block;
+}
+.ssteam-btn:disabled{ opacity:.6; cursor:not-allowed; }
